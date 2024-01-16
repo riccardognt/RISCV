@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : riscV_nocrypt
+Version: S-2021.06-SP4
+Date   : Sat Feb 18 00:27:27 2023
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /eda/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+    sram_32_1024_freepdk45_TT_1p0V_25C_lib (File: /home/isa09_2022_2023/Desktop/lab3_othman/RTL/no_crypt/sram_32_1024_freepdk45/sram_32_1024_freepdk45_TT_1p0V_25C.db)
+
+Number of ports:                         3039
+Number of nets:                         12361
+Number of cells:                         8862
+Number of combinational cells:           7359
+Number of sequential cells:              1462
+Number of macros/black boxes:               2
+Number of buf/inv:                       1809
+Number of references:                      30
+
+Combinational area:               8077.622017
+Buf/Inv area:                     1272.277978
+Noncombinational area:            7779.170251
+Macro/Black Box area:            99941.812500
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                115798.604768
+Total area:                 undefined
+1

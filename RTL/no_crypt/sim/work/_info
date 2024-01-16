@@ -1,0 +1,993 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/isa09_2022_2023/Desktop/lab3_othman/RTL/no_crypt/sim
+T_opt
+!s110 1676675862
+VU8:=>OSVA0ilk=le_[UI72
+04 23 4 work testbench_riscV_nocrypt fast 0
+=1-52540097797c-63f00b16-5f0b9-4f8a
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+Eadd
+Z2 w1673727903
+Z3 DPx4 work 9 constants 0 22 hS8H?KC^eOhdo:SPOg:Q61
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 28
+R0
+Z7 8../RISCV/extra_components/ADD.vhd
+Z8 F../RISCV/extra_components/ADD.vhd
+l0
+L6 1
+VfAXR2=1Sk0onmQC7=bMO<2
+!s100 TPNYPgPgie?eBaS4nmf4?1
+Z9 OL;C;2020.4;71
+32
+Z10 !s110 1676675856
+!i10b 1
+Z11 !s108 1676675856.000000
+Z12 !s90 -reportprogress|300|-work|work|../RISCV/extra_components/ADD.vhd|
+Z13 !s107 ../RISCV/extra_components/ADD.vhd|
+!i113 0
+Z14 o-work work
+Z15 tExplicit 1 CvgOpt 0
+Abehavioral
+R3
+R4
+R5
+R6
+DEx4 work 3 add 0 22 fAXR2=1Sk0onmQC7=bMO<2
+!i122 28
+l16
+L15 4
+VCR^ilNGnWJ]LVikem;5^C3
+!s100 8zeN`53^bXVH<zMUW2`@C1
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ealu
+Z16 w1676201567
+R4
+R5
+R6
+!i122 34
+R0
+Z17 8../RISCV/ALU/ALU.vhd
+Z18 F../RISCV/ALU/ALU.vhd
+l0
+L5 1
+V;PGNDPWj4<_OGDG4gVRCI3
+!s100 Z:`ER9RiL?WaO<6dYkZh`3
+R9
+32
+Z19 !s110 1676675857
+!i10b 1
+Z20 !s108 1676675857.000000
+Z21 !s90 -reportprogress|300|-work|work|../RISCV/ALU/ALU.vhd|
+Z22 !s107 ../RISCV/ALU/ALU.vhd|
+!i113 0
+R14
+R15
+Abehavior
+R4
+R5
+R6
+DEx4 work 3 alu 0 22 ;PGNDPWj4<_OGDG4gVRCI3
+!i122 34
+l19
+L15 23
+V=9CYF<I09BJ8VBfO4TB0_0
+!s100 SYI1VfJ9A8R_ifmz>HO<51
+R9
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R14
+R15
+Ealu_ctrl
+Z23 w1676205926
+R4
+R5
+R6
+!i122 33
+R0
+Z24 8../RISCV/ALU/ALU_CTRL.vhd
+Z25 F../RISCV/ALU/ALU_CTRL.vhd
+l0
+L5 1
+Vj4FannjGVT5kdNTGbSbQ71
+!s100 oCfLHCQGo^Y6Ai_XiGEm;0
+R9
+32
+R19
+!i10b 1
+R20
+Z26 !s90 -reportprogress|300|-work|work|../RISCV/ALU/ALU_CTRL.vhd|
+Z27 !s107 ../RISCV/ALU/ALU_CTRL.vhd|
+!i113 0
+R14
+R15
+Abehavior
+R4
+R5
+R6
+DEx4 work 8 alu_ctrl 0 22 j4FannjGVT5kdNTGbSbQ71
+!i122 33
+l15
+L13 35
+Vl5:NPHNP67TL34^>dhc^?1
+!s100 >>zKgBC[AkoiG_FNO8o9i3
+R9
+32
+R19
+!i10b 1
+R20
+R26
+R27
+!i113 0
+R14
+R15
+Ecomparator
+Z28 w1675276095
+R4
+R5
+R6
+!i122 35
+R0
+Z29 8../RISCV/hazard_detection/comparator.vhd
+Z30 F../RISCV/hazard_detection/comparator.vhd
+l0
+L5 1
+VXOICPkPf><ee^@N?C4MgB1
+!s100 a2d?T0fL63W@E4FOTJLYb2
+R9
+32
+R19
+!i10b 1
+R20
+Z31 !s90 -reportprogress|300|-work|work|../RISCV/hazard_detection/comparator.vhd|
+Z32 !s107 ../RISCV/hazard_detection/comparator.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R4
+R5
+R6
+DEx4 work 10 comparator 0 22 XOICPkPf><ee^@N?C4MgB1
+!i122 35
+l13
+L12 18
+VA^Ynd9QPPc2iEZlX_Of7n1
+!s100 FWihafz`62VKRYie]<DF60
+R9
+32
+R19
+!i10b 1
+R20
+R31
+R32
+!i113 0
+R14
+R15
+Pcomponents_package
+R3
+R5
+R6
+!i122 25
+w1676409457
+R0
+8../RISCV/components_package.vhd
+F../RISCV/components_package.vhd
+l0
+L5 1
+VDJN@=_UZM:[VVQhFzgT?P3
+!s100 9hK;el1h9:RJAiI;njiid0
+R9
+32
+Z33 !s110 1676675855
+!i10b 1
+Z34 !s108 1676675855.000000
+!s90 -reportprogress|300|-work|work|../RISCV/components_package.vhd|
+!s107 ../RISCV/components_package.vhd|
+!i113 0
+R14
+R15
+Pconstants
+R5
+R6
+!i122 24
+w1676226024
+R0
+8../RISCV/constants.vhd
+F../RISCV/constants.vhd
+l0
+L4 1
+VhS8H?KC^eOhdo:SPOg:Q61
+!s100 T>;iKAaACE@Cg8A_9NgcD3
+R9
+32
+R33
+!i10b 1
+R34
+!s90 -reportprogress|300|-work|work|../RISCV/constants.vhd|
+!s107 ../RISCV/constants.vhd|
+!i113 0
+R14
+R15
+Econtrol_unit
+Z35 w1676392684
+R3
+R4
+R5
+R6
+!i122 41
+R0
+Z36 8../RISCV/control_unit.vhd
+Z37 F../RISCV/control_unit.vhd
+l0
+L7 1
+VoP^FN]<36GQb;bi6aEoeU3
+!s100 @m``46VW6k6fm[Sf[fSD60
+R9
+32
+Z38 !s110 1676675859
+!i10b 1
+Z39 !s108 1676675859.000000
+Z40 !s90 -reportprogress|300|-work|work|../RISCV/control_unit.vhd|
+Z41 !s107 ../RISCV/control_unit.vhd|
+!i113 0
+R14
+R15
+Abehavior
+R3
+R4
+R5
+R6
+DEx4 work 12 control_unit 0 22 oP^FN]<36GQb;bi6aEoeU3
+!i122 41
+l21
+L19 72
+Vc4ijeYOe8miH9]ZmgCS273
+!s100 ORaffCLMRVi4oX]V];Ei^2
+R9
+32
+R38
+!i10b 1
+R39
+R40
+R41
+!i113 0
+R14
+R15
+Edata_mem
+Z42 w1676231167
+Z43 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z44 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R5
+R6
+!i122 32
+R0
+Z45 8../RISCV/DATA_MEMORY/data_mem.vhd
+Z46 F../RISCV/DATA_MEMORY/data_mem.vhd
+l0
+L6 1
+VXQ^7T4hgRmf5COhd`KoDN2
+!s100 =Wf4z2E]Eb`]>Ln3Oj;jM0
+R9
+32
+R19
+!i10b 1
+R20
+Z47 !s90 -reportprogress|300|-work|work|../RISCV/DATA_MEMORY/data_mem.vhd|
+Z48 !s107 ../RISCV/DATA_MEMORY/data_mem.vhd|
+!i113 0
+R14
+R15
+Abeh
+R43
+R44
+R5
+R6
+DEx4 work 8 data_mem 0 22 XQ^7T4hgRmf5COhd`KoDN2
+!i122 32
+l41
+L18 56
+VGA_cF?eWn=I;a:N=>hJnZ1
+!s100 koA5l06>>7b:bJ<iC[RdM2
+R9
+32
+R19
+!i10b 1
+R20
+R47
+R48
+!i113 0
+R14
+R15
+Eex_mem
+Z49 w1675958638
+R4
+R5
+R6
+!i122 44
+R0
+Z50 8../RISCV/pipe_registers/EX_MEM.vhd
+Z51 F../RISCV/pipe_registers/EX_MEM.vhd
+l0
+L5 1
+V4KfgYABFd8I^Y`[jLcnCO0
+!s100 Rz@K2mEleljH:Te?7lH]R3
+R9
+32
+R38
+!i10b 1
+R39
+Z52 !s90 -reportprogress|300|-work|work|../RISCV/pipe_registers/EX_MEM.vhd|
+Z53 !s107 ../RISCV/pipe_registers/EX_MEM.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R4
+R5
+R6
+DEx4 work 6 ex_mem 0 22 4KfgYABFd8I^Y`[jLcnCO0
+!i122 44
+l27
+L26 27
+VOeIB4bm2j`NAH?CmBN@eX1
+!s100 Y5bHljaIHa^;ZcGI5:J3l3
+R9
+32
+R38
+!i10b 1
+R39
+R52
+R53
+!i113 0
+R14
+R15
+Eforwarding_unit
+Z54 w1676407903
+R5
+R6
+!i122 36
+R0
+Z55 8../RISCV/hazard_detection/forwarding_unit.vhd
+Z56 F../RISCV/hazard_detection/forwarding_unit.vhd
+l0
+L4 1
+V_ZH2@n^VO8mA4agm4?;5W1
+!s100 2W5o>OGSCFoR1T<<HkB8X3
+R9
+32
+Z57 !s110 1676675858
+!i10b 1
+R20
+Z58 !s90 -reportprogress|300|-work|work|../RISCV/hazard_detection/forwarding_unit.vhd|
+Z59 !s107 ../RISCV/hazard_detection/forwarding_unit.vhd|
+!i113 0
+R14
+R15
+Abeh
+R5
+R6
+DEx4 work 15 forwarding_unit 0 22 _ZH2@n^VO8mA4agm4?;5W1
+!i122 36
+l19
+L17 40
+V7Xi9SjN:4Nc=M9cR30TI70
+!s100 :ab8cJ^X7?QHfHSOFkc`A0
+R9
+32
+R57
+!i10b 1
+R20
+R58
+R59
+!i113 0
+R14
+R15
+Ehazard_detection_unit
+Z60 w1676047837
+R5
+R6
+!i122 37
+R0
+Z61 8../RISCV/hazard_detection/hazard_detection_unit.vhd
+Z62 F../RISCV/hazard_detection/hazard_detection_unit.vhd
+l0
+L4 1
+VG0HUEj<6DDk>VHkdzlF5E0
+!s100 h>=KkiGO^VM]o]DC]F3BZ3
+R9
+32
+R57
+!i10b 1
+Z63 !s108 1676675858.000000
+Z64 !s90 -reportprogress|300|-work|work|../RISCV/hazard_detection/hazard_detection_unit.vhd|
+Z65 !s107 ../RISCV/hazard_detection/hazard_detection_unit.vhd|
+!i113 0
+R14
+R15
+Abeh
+R5
+R6
+DEx4 work 21 hazard_detection_unit 0 22 G0HUEj<6DDk>VHkdzlF5E0
+!i122 37
+l19
+L17 16
+V7H]3zSD2WXe2d:fB<[jm11
+!s100 6Vo`nL`c`GMhH3MRhZhff2
+R9
+32
+R57
+!i10b 1
+R63
+R64
+R65
+!i113 0
+R14
+R15
+Eid_ex
+Z66 w1676409313
+R4
+R5
+R6
+!i122 42
+R0
+Z67 8../RISCV/pipe_registers/ID_EX.vhd
+Z68 F../RISCV/pipe_registers/ID_EX.vhd
+l0
+L5 1
+VUcALYY[]ODFVS57JAH^aX2
+!s100 kMmh6I_jX9BN@EOz1QJ5W1
+R9
+32
+R38
+!i10b 1
+R39
+Z69 !s90 -reportprogress|300|-work|work|../RISCV/pipe_registers/ID_EX.vhd|
+Z70 !s107 ../RISCV/pipe_registers/ID_EX.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R4
+R5
+R6
+DEx4 work 5 id_ex 0 22 UcALYY[]ODFVS57JAH^aX2
+!i122 42
+l43
+L42 44
+VcIJIAmaT6cPSY<nA>G7iI0
+!s100 nfVeN4TeSJelNE9k<Om4z1
+R9
+32
+R38
+!i10b 1
+R39
+R69
+R70
+!i113 0
+R14
+R15
+Eif_id
+Z71 w1676409332
+R4
+R5
+R6
+!i122 43
+R0
+Z72 8../RISCV/pipe_registers/IF_ID.vhd
+Z73 F../RISCV/pipe_registers/IF_ID.vhd
+l0
+L5 1
+VE]EY4nn?<>_eC5k[nA;=A3
+!s100 W;K58^iSCfTF?TDP7iOjk2
+R9
+32
+R38
+!i10b 1
+R39
+Z74 !s90 -reportprogress|300|-work|work|../RISCV/pipe_registers/IF_ID.vhd|
+Z75 !s107 ../RISCV/pipe_registers/IF_ID.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R4
+R5
+R6
+DEx4 work 5 if_id 0 22 E]EY4nn?<>_eC5k[nA;=A3
+!i122 43
+l28
+L25 30
+V0odYenR:4Boj=>gVWEdKd1
+!s100 TClb[n6@7@OG8dB[@S=[^3
+R9
+32
+R38
+!i10b 1
+R39
+R74
+R75
+!i113 0
+R14
+R15
+Eimm_gen
+Z76 w1674499673
+R3
+R4
+R5
+R6
+!i122 39
+R0
+Z77 8../RISCV/imm_gen.vhd
+Z78 F../RISCV/imm_gen.vhd
+l0
+L7 1
+V<Q8MEA7>bCGJ8:2PVVXdd0
+!s100 :hDKC_[?ZYD[aXUm1ADKX0
+R9
+32
+R57
+!i10b 1
+R63
+Z79 !s90 -reportprogress|300|-work|work|../RISCV/imm_gen.vhd|
+Z80 !s107 ../RISCV/imm_gen.vhd|
+!i113 0
+R14
+R15
+Abehavior
+R3
+R4
+R5
+R6
+DEx4 work 7 imm_gen 0 22 <Q8MEA7>bCGJ8:2PVVXdd0
+!i122 39
+l15
+L13 55
+VM2N^7l^=b1N<fW<?Dg7eT0
+!s100 Ie97:o4k:7XQ4J_cIdGZ03
+R9
+32
+R57
+!i10b 1
+R63
+R79
+R80
+!i113 0
+R14
+R15
+Einstructions_rom
+Z81 w1676231139
+R3
+R43
+R44
+R5
+R6
+!i122 27
+R0
+Z82 8../RISCV/INSTRUCTION_MEMORY/instuctions_rom.vhd
+Z83 F../RISCV/INSTRUCTION_MEMORY/instuctions_rom.vhd
+l0
+L7 1
+V`nbX@Bhc>TAiHhn5Dj0bo2
+!s100 5ThQ14nn9a4WZbDE;8z<K2
+R9
+32
+R10
+!i10b 1
+R11
+Z84 !s90 -reportprogress|300|-work|work|../RISCV/INSTRUCTION_MEMORY/instuctions_rom.vhd|
+Z85 !s107 ../RISCV/INSTRUCTION_MEMORY/instuctions_rom.vhd|
+!i113 0
+R14
+R15
+Abeh
+R3
+R43
+R44
+R5
+R6
+DEx4 work 16 instructions_rom 0 22 `nbX@Bhc>TAiHhn5Dj0bo2
+!i122 27
+l29
+L16 47
+VgUVBC[32I;n?O71B;eaFE0
+!s100 j2UfP5k@E]k^jZPMDjofL0
+R9
+32
+R10
+!i10b 1
+R11
+R84
+R85
+!i113 0
+R14
+R15
+Emem_wb
+Z86 w1675338177
+R4
+R5
+R6
+!i122 45
+R0
+Z87 8../RISCV/pipe_registers/MEM_WB.vhd
+Z88 F../RISCV/pipe_registers/MEM_WB.vhd
+l0
+L5 1
+VW]_QbBLAXY`hja?=i0HH43
+!s100 U]3T0DhcIMkBLNIE;XIXi0
+R9
+32
+R38
+!i10b 1
+R39
+Z89 !s90 -reportprogress|300|-work|work|../RISCV/pipe_registers/MEM_WB.vhd|
+Z90 !s107 ../RISCV/pipe_registers/MEM_WB.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R4
+R5
+R6
+DEx4 work 6 mem_wb 0 22 W]_QbBLAXY`hja?=i0HH43
+!i122 45
+l25
+L24 26
+VWT]Oz41ZcdZgGUbhJ]SF^0
+!s100 7QLc`CQT@VWBU?WdhDca73
+R9
+32
+Z91 !s110 1676675860
+!i10b 1
+R39
+R89
+R90
+!i113 0
+R14
+R15
+Emux2_to_1
+Z92 w1676047340
+R3
+R4
+R5
+R6
+!i122 29
+R0
+Z93 8../RISCV/extra_components/mux2_to_1.vhd
+Z94 F../RISCV/extra_components/mux2_to_1.vhd
+l0
+L6 1
+Vdc4Sa1;7?dmDGb5YfgmAE2
+!s100 17V;?o99kc6W5J;`=:hdn2
+R9
+32
+R10
+!i10b 1
+R11
+Z95 !s90 -reportprogress|300|-work|work|../RISCV/extra_components/mux2_to_1.vhd|
+Z96 !s107 ../RISCV/extra_components/mux2_to_1.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R3
+R4
+R5
+R6
+DEx4 work 9 mux2_to_1 0 22 dc4Sa1;7?dmDGb5YfgmAE2
+!i122 29
+l17
+Z97 L16 11
+VZzT2^7o>LjhG>Em:L`TYQ3
+!s100 JU=8oc[XJzKD]bg?Me1=S3
+R9
+32
+R10
+!i10b 1
+R11
+R95
+R96
+!i113 0
+R14
+R15
+Emux3_to_1
+Z98 w1675015571
+R3
+R4
+R5
+R6
+!i122 30
+R0
+Z99 8../RISCV/extra_components/mux3_to_1.vhd
+Z100 F../RISCV/extra_components/mux3_to_1.vhd
+l0
+L6 1
+VP_GZc1OF3Zj9Pem=KODF;1
+!s100 <hiNhZ5<ZK]Q0QSTXf9AC1
+R9
+32
+R10
+!i10b 1
+R11
+Z101 !s90 -reportprogress|300|-work|work|../RISCV/extra_components/mux3_to_1.vhd|
+Z102 !s107 ../RISCV/extra_components/mux3_to_1.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R3
+R4
+R5
+R6
+DEx4 work 9 mux3_to_1 0 22 P_GZc1OF3Zj9Pem=KODF;1
+!i122 30
+l17
+R97
+VYBg@:7N`9<964<CieTlCR2
+!s100 ^R48BhSG<Ug_nX?5D:7Fj3
+R9
+32
+R10
+!i10b 1
+R11
+R101
+R102
+!i113 0
+R14
+R15
+Emux4_to_1
+Z103 w1675338735
+R3
+R4
+R5
+R6
+!i122 31
+R0
+Z104 8../RISCV/extra_components/mux4_to_1.vhd
+Z105 F../RISCV/extra_components/mux4_to_1.vhd
+l0
+L6 1
+V]^[L^JABL;8Xb`<mBBUZn0
+!s100 `[8a3:5CAHkj=mSV@@z_M2
+R9
+32
+R19
+!i10b 1
+R11
+Z106 !s90 -reportprogress|300|-work|work|../RISCV/extra_components/mux4_to_1.vhd|
+Z107 !s107 ../RISCV/extra_components/mux4_to_1.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R3
+R4
+R5
+R6
+DEx4 work 9 mux4_to_1 0 22 ]^[L^JABL;8Xb`<mBBUZn0
+!i122 31
+l18
+L17 12
+VW?eRoT5R?V]Oe5UNIhOSK0
+!s100 IUjK>DkFD:CnkN7O5K6@F2
+R9
+32
+R19
+!i10b 1
+R11
+R106
+R107
+!i113 0
+R14
+R15
+Epc
+Z108 w1675336648
+R4
+R5
+R6
+!i122 38
+R0
+Z109 8../RISCV/PC.vhd
+Z110 F../RISCV/PC.vhd
+l0
+L6 1
+VmV[Fa[zoLWY`<lz82igV<2
+!s100 b?_7gFIYeB2MTjhJ3TLPz0
+R9
+32
+R57
+!i10b 1
+R63
+Z111 !s90 -reportprogress|300|-work|work|../RISCV/PC.vhd|
+Z112 !s107 ../RISCV/PC.vhd|
+!i113 0
+R14
+R15
+Abehavior
+R4
+R5
+R6
+DEx4 work 2 pc 0 22 mV[Fa[zoLWY`<lz82igV<2
+!i122 38
+l20
+L17 17
+VYmXY5kKW9eBl>=cJlmM;c3
+!s100 Z^k@;9@Z;YGmd_MA_9S2B3
+R9
+32
+R57
+!i10b 1
+R63
+R111
+R112
+!i113 0
+R14
+R15
+Eregister_file
+Z113 w1676206134
+R4
+R5
+R6
+!i122 40
+R0
+Z114 8../RISCV/REGISTER_FILE.vhd
+Z115 F../RISCV/REGISTER_FILE.vhd
+l0
+L6 1
+VzcblXJ3bEeRh^`FkT79Q13
+!s100 3hEkD]f47>FRR5k^_:F3z3
+R9
+32
+R57
+!i10b 1
+R63
+Z116 !s90 -reportprogress|300|-work|work|../RISCV/REGISTER_FILE.vhd|
+Z117 !s107 ../RISCV/REGISTER_FILE.vhd|
+!i113 0
+R14
+R15
+Abehavior
+R4
+R5
+R6
+DEx4 work 13 register_file 0 22 zcblXJ3bEeRh^`FkT79Q13
+!i122 40
+l24
+L20 21
+VHRLJT39nH9GLBg?EKkV??0
+!s100 52ld723izh>2>fHT6K7S62
+R9
+32
+R57
+!i10b 1
+R63
+R116
+R117
+!i113 0
+R14
+R15
+Eriscv_nocrypt
+Z118 w1676488268
+Z119 DPx4 work 18 components_package 0 22 DJN@=_UZM:[VVQhFzgT?P3
+R3
+R4
+R5
+R6
+!i122 46
+R0
+Z120 8../RISCV/riscV_nocrypt.vhd
+Z121 F../RISCV/riscV_nocrypt.vhd
+l0
+L7 1
+VQ0^zUblX;fTbP0`kaj[Om1
+!s100 z^^V]k:>4gCjQkE:=T<363
+R9
+32
+R91
+!i10b 1
+Z122 !s108 1676675860.000000
+Z123 !s90 -reportprogress|300|-work|work|../RISCV/riscV_nocrypt.vhd|
+Z124 !s107 ../RISCV/riscV_nocrypt.vhd|
+!i113 0
+R14
+R15
+Abehavior
+R119
+R3
+R4
+R5
+R6
+DEx4 work 13 riscv_nocrypt 0 22 Q0^zUblX;fTbP0`kaj[Om1
+!i122 46
+l78
+L13 180
+V0:LWk:WmN[TGP2No1BEXC2
+!s100 FFPb9kRe2HgnlgUl3^Y933
+R9
+32
+R91
+!i10b 1
+R122
+R123
+R124
+!i113 0
+R14
+R15
+vsram_32_1024_freepdk45
+R10
+!i10b 1
+!s100 AYM^c2FKDgeFm5hz79i_b3
+Z125 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I7@?PBVBi9WK=PK1lnm_S>3
+R0
+w1666790436
+8../RISCV/INSTRUCTION_MEMORY/sram_32_1024_freepdk45/sram_32_1024_freepdk45.v
+F../RISCV/INSTRUCTION_MEMORY/sram_32_1024_freepdk45/sram_32_1024_freepdk45.v
+!i122 26
+L0 5 57
+Z126 VDg1SIo80bB@j0V0VzS_@n1
+Z127 OL;L;2020.4;71
+r1
+!s85 0
+31
+R34
+!s107 ../RISCV/INSTRUCTION_MEMORY/sram_32_1024_freepdk45/sram_32_1024_freepdk45.v|
+!s90 -reportprogress|300|-work|work|../RISCV/INSTRUCTION_MEMORY/sram_32_1024_freepdk45/sram_32_1024_freepdk45.v|
+!i113 0
+Z128 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtestbench_riscV_nocrypt
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R91
+!i10b 1
+!s100 T?0698flX82AAb[z?`C]=2
+R125
+IMB>98EDoaOBi3NGzeIJoX1
+S1
+R0
+w1676675849
+8../TB/testbench_riscV_nocrypt.sv
+F../TB/testbench_riscV_nocrypt.sv
+!i122 47
+L0 2 27
+R126
+R127
+r1
+!s85 0
+31
+R122
+!s107 ../TB/testbench_riscV_nocrypt.sv|
+!s90 -reportprogress|300|-work|work|../TB/testbench_riscV_nocrypt.sv|
+!i113 0
+R128
+R1
+ntestbench_risc@v_nocrypt

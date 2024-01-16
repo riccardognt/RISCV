@@ -1,0 +1,314 @@
+Loading db file '/eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/libraries/syn/gtech.db'
+Loading db file '/eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'sram_32_1024_freepdk45_TT_1p0V_25C_lib'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../RISCV/riscV.vhd:32: The initial value for signal 'CU_FU_EN' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Presto compilation completed successfully. (riscV)
+Elaborated 1 design.
+Current design is now 'riscV'.
+Information: Building the design 'crypt_unit'. (HDL-193)
+Presto compilation completed successfully. (crypt_unit)
+Information: Building the design 'mux2_to_1' instantiated from design 'riscV' with
+	the parameters "Nbit=32". (HDL-193)
+Presto compilation completed successfully. (mux2_to_1_Nbit32)
+Information: Building the design 'IF_ID'. (HDL-193)
+
+Inferred memory devices in process
+	in routine IF_ID line 31 in file
+		'../RISCV/pipe_registers/IF_ID.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      instr_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  seq_to_ID_EX_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   PC_to_ID_EX_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (IF_ID)
+Information: Building the design 'hazard_detection_unit'. (HDL-193)
+Presto compilation completed successfully. (hazard_detection_unit)
+Information: Building the design 'control_unit'. (HDL-193)
+
+Statistics for case statements in always block at line 23 in file
+	'../RISCV/control_unit.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            25            |    auto/auto     |
+|            52            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (control_unit)
+Information: Building the design 'mux2_to_1' instantiated from design 'riscV' with
+	the parameters "Nbit=16". (HDL-193)
+Presto compilation completed successfully. (mux2_to_1_Nbit16)
+Information: Building the design 'ADD' instantiated from design 'riscV' with
+	the parameters "Nbit=32". (HDL-193)
+Presto compilation completed successfully. (ADD_Nbit32)
+Information: Building the design 'REGISTER_FILE' instantiated from design 'riscV' with
+	the parameters "N=32". (HDL-193)
+Warning:  ../RISCV/REGISTER_FILE.vhd:22: The initial value for signal 'reg_file' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Inferred memory devices in process
+	in routine REGISTER_FILE_N32 line 27 in file
+		'../RISCV/REGISTER_FILE.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    reg_file_reg     | Flip-flop |  994  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    reg_file_reg     | Flip-flop |  30   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+==========================================================
+|   block name/line    | Inputs | Outputs | # sel inputs |
+==========================================================
+| REGISTER_FILE_N32/25 |   32   |   32    |      5       |
+| REGISTER_FILE_N32/26 |   32   |   32    |      5       |
+==========================================================
+Presto compilation completed successfully. (REGISTER_FILE_N32)
+Information: Building the design 'comparator'. (HDL-193)
+Presto compilation completed successfully. (comparator)
+Information: Building the design 'imm_gen'. (HDL-193)
+
+Statistics for case statements in always block at line 17 in file
+	'../RISCV/imm_gen.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            19            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (imm_gen)
+Information: Building the design 'ID_EX'. (HDL-193)
+
+Inferred memory devices in process
+	in routine ID_EX line 45 in file
+		'../RISCV/pipe_registers/ID_EX.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  EX_FU_EN_out_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     WB_out_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      M_out_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     EX_out_reg      | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     seq_out_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   pc_old_out_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  data_rs1_out_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  data_rs2_out_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   imm_gen_out_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  instr_rs1_out_reg  | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  instr_rs2_out_reg  | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    funct_out_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  instr_rd_out_reg   | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (ID_EX)
+Information: Building the design 'mux4_to_1' instantiated from design 'riscV' with
+	the parameters "Nbit=32". (HDL-193)
+
+Statistics for case statements in always block at line 19 in file
+	'../RISCV/extra_components/mux4_to_1.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            21            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (mux4_to_1_Nbit32)
+Information: Building the design 'mux3_to_1' instantiated from design 'riscV' with
+	the parameters "Nbit=32". (HDL-193)
+
+Statistics for case statements in always block at line 18 in file
+	'../RISCV/extra_components/mux3_to_1.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            20            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (mux3_to_1_Nbit32)
+Information: Building the design 'ALU'. (HDL-193)
+Warning:  ../RISCV/ALU/ALU.vhd:17: The initial value for signal 'output' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Statistics for case statements in always block at line 23 in file
+	'../RISCV/ALU/ALU.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            25            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (ALU)
+Information: Building the design 'ALU_CTRL'. (HDL-193)
+Warning:  ../RISCV/ALU/ALU_CTRL.vhd:18: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 16 in file
+	'../RISCV/ALU/ALU_CTRL.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            18            |    auto/auto     |
+|            19            |    auto/auto     |
+|            32            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (ALU_CTRL)
+Information: Building the design 'forwarding_unit'. (HDL-193)
+Presto compilation completed successfully. (forwarding_unit)
+Information: Building the design 'EX_MEM'. (HDL-193)
+
+Inferred memory devices in process
+	in routine EX_MEM line 29 in file
+		'../RISCV/pipe_registers/EX_MEM.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rd_out_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     WB_out_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      M_out_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     alu_out_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   to_ram_out_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (EX_MEM)
+Information: Building the design 'data_mem'. (HDL-193)
+Warning:  ../RISCV/DATA_MEMORY/data_mem.vhd:20: Physical types are not supported. Presto ignores it. (ELAB-918)
+Warning:  ../RISCV/DATA_MEMORY/data_mem.vhd:21: Physical types are not supported. Presto ignores it. (ELAB-918)
+
+Inferred memory devices in process
+	in routine data_mem line 56 in file
+		'../RISCV/DATA_MEMORY/data_mem.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      req1_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine data_mem line 65 in file
+		'../RISCV/DATA_MEMORY/data_mem.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       ACK_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (data_mem)
+Information: Building the design 'MEM_WB'. (HDL-193)
+
+Inferred memory devices in process
+	in routine MEM_WB line 27 in file
+		'../RISCV/pipe_registers/MEM_WB.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rd_out_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     WB_out_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     alu_out_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  data_mem_out_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (MEM_WB)
+Information: Building the design 'CU'. (HDL-193)
+
+Statistics for case statements in always block at line 40 in file
+	'../RISCV/CRYPT/CU.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            43            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 110 in file
+	'../RISCV/CRYPT/CU.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           114            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CU line 29 in file
+		'../RISCV/CRYPT/CU.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     current_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CU)
+Information: Building the design 'PC_crypt' instantiated from design 'crypt_unit' with
+	the parameters "Nbit=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine PC_crypt_Nbit32 line 24 in file
+		'../RISCV/CRYPT/PC_crypt.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   stored_data_reg   | Flip-flop |  31   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   stored_data_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine PC_crypt_Nbit32 line 33 in file
+		'../RISCV/CRYPT/PC_crypt.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (PC_crypt_Nbit32)
+Information: Building the design 'I_decr'. (HDL-193)
+
+Inferred memory devices in process
+	in routine I_decr line 26 in file
+		'../RISCV/CRYPT/I_decr.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    K_Mem_add_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    I_Mem_add_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     to_pipe_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   stored_key_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (I_decr)
+Information: Building the design 'K_MEM'. (HDL-193)
+Warning:  ../RISCV/CRYPT/K_MEM.vhd:29: The initial value for signal 'add_old' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  ../RISCV/CRYPT/K_MEM.vhd:30: The initial value for signal 's_ACK' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Inferred memory devices in process
+	in routine K_MEM line 39 in file
+		'../RISCV/CRYPT/K_MEM.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     address_reg     | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine K_MEM line 62 in file
+		'../RISCV/CRYPT/K_MEM.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     add_old_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ACK_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    Instr_out_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (K_MEM)
+Information: Building the design 'I_MEM'. (HDL-193)
+Warning:  ../RISCV/CRYPT/I_MEM.vhd:29: The initial value for signal 'add_old' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  ../RISCV/CRYPT/I_MEM.vhd:30: The initial value for signal 's_ACK' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Inferred memory devices in process
+	in routine I_MEM line 39 in file
+		'../RISCV/CRYPT/I_MEM.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     address_reg     | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine I_MEM line 64 in file
+		'../RISCV/CRYPT/I_MEM.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     add_old_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ACK_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    Instr_out_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (I_MEM)
+1

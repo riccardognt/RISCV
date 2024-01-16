@@ -1,0 +1,449 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version S-2021.06-SP4 for linux64 - Nov 23, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home/isa09_2022_2023/.synopsys_dc_gui/preferences.tcl
+define_design_lib WORK -path ./work
+1
+#crypt components
+analyze -library WORK -format vhdl {../RISCV/CRYPT/I_decr.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration I_DECR
+Compiling Architecture BEHAVIOR of I_DECR
+Warning:  ../RISCV/CRYPT/I_decr.vhd:19: The architecture Behavior has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+Loading db file '/eda/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db'
+Loading db file '/eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/isa09_2022_2023/Desktop/lab3_othman/RTL/crypt/sram_32_1024_freepdk45/sram_32_1024_freepdk45_TT_1p0V_25C.db'
+1
+analyze -library WORK -format vhdl {../RISCV/CRYPT/I_MEM.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration I_MEM
+Compiling Architecture BEH of I_MEM
+Warning:  ../RISCV/CRYPT/I_MEM.vhd:16: The architecture beh has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/CRYPT/K_MEM.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration K_MEM
+Compiling Architecture BEH of K_MEM
+Warning:  ../RISCV/CRYPT/K_MEM.vhd:16: The architecture beh has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/CRYPT/PC_crypt.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration PC_CRYPT
+Compiling Architecture BEHAVIOR of PC_CRYPT
+Warning:  ../RISCV/CRYPT/PC_crypt.vhd:17: The architecture Behavior has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/CRYPT/crypt_unit.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration CRYPT_UNIT
+Compiling Architecture BEHAVIOR of CRYPT_UNIT
+Warning:  ../RISCV/CRYPT/crypt_unit.vhd:21: The architecture Behavior has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/CRYPT/CU.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration CU
+Compiling Architecture BEHAVIORAL of CU
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/constants.vhd}
+Running PRESTO HDLC
+Compiling Package Declaration CONSTANTS
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/components_package.vhd}
+Running PRESTO HDLC
+Compiling Package Declaration COMPONENTS_PACKAGE
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/INSTRUCTION_MEMORY/instuctions_rom.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration INSTRUCTIONS_ROM
+Compiling Architecture BEH of INSTRUCTIONS_ROM
+Warning:  ../RISCV/INSTRUCTION_MEMORY/instuctions_rom.vhd:16: The architecture beh has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/PC.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration PC
+Compiling Architecture BEHAVIOR of PC
+Warning:  ../RISCV/PC.vhd:17: The architecture Behavior has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/extra_components/ADD.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration ADD
+Compiling Architecture BEHAVIORAL of ADD
+Warning:  ../RISCV/extra_components/ADD.vhd:15: The architecture Behavioral has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/extra_components/mux2_to_1.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration MUX2_TO_1
+Compiling Architecture BEHAVIORAL of MUX2_TO_1
+Warning:  ../RISCV/extra_components/mux2_to_1.vhd:16: The architecture Behavioral has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/extra_components/mux3_to_1.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration MUX3_TO_1
+Compiling Architecture BEHAVIORAL of MUX3_TO_1
+Warning:  ../RISCV/extra_components/mux3_to_1.vhd:16: The architecture Behavioral has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/extra_components/mux4_to_1.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration MUX4_TO_1
+Compiling Architecture BEHAVIORAL of MUX4_TO_1
+Warning:  ../RISCV/extra_components/mux4_to_1.vhd:17: The architecture Behavioral has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/DATA_MEMORY/data_mem.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration DATA_MEM
+Compiling Architecture BEH of DATA_MEM
+Warning:  ../RISCV/DATA_MEMORY/data_mem.vhd:18: The architecture beh has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/ALU/ALU_CTRL.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration ALU_CTRL
+Compiling Architecture BEHAVIOR of ALU_CTRL
+Warning:  ../RISCV/ALU/ALU_CTRL.vhd:13: The architecture Behavior has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/ALU/ALU.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration ALU
+Compiling Architecture BEHAVIOR of ALU
+Warning:  ../RISCV/ALU/ALU.vhd:15: The architecture Behavior has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/imm_gen.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration IMM_GEN
+Compiling Architecture BEHAVIOR of IMM_GEN
+Warning:  ../RISCV/imm_gen.vhd:13: The architecture Behavior has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/REGISTER_FILE.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration REGISTER_FILE
+Compiling Architecture BEHAVIOR of REGISTER_FILE
+Warning:  ../RISCV/REGISTER_FILE.vhd:20: The architecture Behavior has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/control_unit.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration CONTROL_UNIT
+Compiling Architecture BEHAVIOR of CONTROL_UNIT
+Warning:  ../RISCV/control_unit.vhd:19: The architecture Behavior has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/hazard_detection/comparator.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration COMPARATOR
+Compiling Architecture BEHAVIORAL of COMPARATOR
+Warning:  ../RISCV/hazard_detection/comparator.vhd:12: The architecture Behavioral has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/hazard_detection/forwarding_unit.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration FORWARDING_UNIT
+Compiling Architecture BEH of FORWARDING_UNIT
+Warning:  ../RISCV/hazard_detection/forwarding_unit.vhd:17: The architecture beh has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/hazard_detection/hazard_detection_unit.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration HAZARD_DETECTION_UNIT
+Compiling Architecture BEH of HAZARD_DETECTION_UNIT
+Warning:  ../RISCV/hazard_detection/hazard_detection_unit.vhd:17: The architecture beh has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/pipe_registers/ID_EX.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration ID_EX
+Compiling Architecture BEHAVIORAL of ID_EX
+Warning:  ../RISCV/pipe_registers/ID_EX.vhd:42: The architecture Behavioral has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/pipe_registers/IF_ID.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration IF_ID
+Compiling Architecture BEHAVIORAL of IF_ID
+Warning:  ../RISCV/pipe_registers/IF_ID.vhd:25: The architecture Behavioral has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/pipe_registers/EX_MEM.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration EX_MEM
+Compiling Architecture BEHAVIORAL of EX_MEM
+Warning:  ../RISCV/pipe_registers/EX_MEM.vhd:26: The architecture Behavioral has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/pipe_registers/MEM_WB.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration MEM_WB
+Compiling Architecture BEHAVIORAL of MEM_WB
+Warning:  ../RISCV/pipe_registers/MEM_WB.vhd:24: The architecture Behavioral has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format vhdl {../RISCV/riscV.vhd}
+Running PRESTO HDLC
+Compiling Entity Declaration RISCV
+Compiling Architecture BEHAVIOR of RISCV
+Warning:  ../RISCV/riscV.vhd:13: The architecture Behavior has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+set power_preserve_rtl_hier_names true
+true
+elaborate riscV -arch Behavior -lib WORK > ./elaborate.rep
+uniquify
+Information: Uniquified 4 instances of design 'mux2_to_1_Nbit32'. (OPT-1056)
+Information: Uniquified 2 instances of design 'ADD_Nbit32'. (OPT-1056)
+Information: Uniquified 3 instances of design 'mux4_to_1_Nbit32'. (OPT-1056)
+1
+link
+
+  Linking design 'riscV'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (31 designs)              /home/isa09_2022_2023/Desktop/lab3_othman/RTL/crypt/syn/riscV.db, etc
+  NangateOpenCellLibrary (library) /eda/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db
+  dw_foundation.sldb (library) /eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/libraries/syn/dw_foundation.sldb
+  sram_32_1024_freepdk45_TT_1p0V_25C_lib (library) /home/isa09_2022_2023/Desktop/lab3_othman/RTL/crypt/sram_32_1024_freepdk45/sram_32_1024_freepdk45_TT_1p0V_25C.db
+
+1
+create_clock -name MY_CLK -period 4.40 CK
+1
+set_dont_touch_network MY_CLK
+1
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+1
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] CK]
+1
+#set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+#set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+#set_load $OLOAD [all_outputs]
+check_design
+ 
+****************************************
+check_design summary:
+Version:     S-2021.06-SP4
+Date:        Sat Feb 18 01:09:41 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     24
+    Unconnected ports (LINT-28)                                    22
+    Shorted outputs (LINT-31)                                       2
+
+Cells                                                              59
+    Cells do not drive (LINT-1)                                     9
+    Connected to power or ground (LINT-32)                         48
+    Nets connected to multiple pins on same cell (LINT-33)          2
+
+Designs                                                             1
+    Design has no outputs ports (LINT-25)                           1
+--------------------------------------------------------------------------------
+
+Warning: In design 'ALU', cell 'B_9' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'B_10' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'B_11' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'B_12' does not drive any nets. (LINT-1)
+Warning: In design 'forwarding_unit', cell 'C152' does not drive any nets. (LINT-1)
+Warning: In design 'forwarding_unit', cell 'C169' does not drive any nets. (LINT-1)
+Warning: In design 'forwarding_unit', cell 'C180' does not drive any nets. (LINT-1)
+Warning: In design 'K_MEM', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'I_MEM', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: Design 'riscV' does not have any output ports. (LINT-25)
+Warning: In design 'data_mem', port 'WADX[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_mem', port 'WADX[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'hazard_detection_unit', output port 'PCWrite' is connected directly to output port 'Control_mux'. (LINT-31)
+Warning: In design 'hazard_detection_unit', output port 'PCWrite' is connected directly to output port 'InFIDWrite'. (LINT-31)
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[15]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[14]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[13]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[12]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[11]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[10]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[7]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[6]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[5]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[4]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[3]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[2]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on su
+Received Signal 15 from: PID=15797 (UID=1151)
+ 0. (LINT-32)
+   Pin 'B[1]' is connected to logic 0. 
+Warning: In design 'riscV', a pin on submodule 'MUX4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[0]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[31]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[30]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[29]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[28]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[27]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[26]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[25]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[24]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[23]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[22]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[21]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[20]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[19]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[18]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[17]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[16]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[15]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[14]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[13]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[12]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[11]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[10]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[7]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[6]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[5]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[4]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[3]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[2]' is connected to logic 1. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[1]' is connected to logic 0. 
+Warning: In design 'crypt_unit', a pin on submodule 'ADD1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[0]' is connected to logic 0. 
+Warning: In design 'riscV', the same net is connected to more than one pin on submodule 'MUX4'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'B[15]', 'B[14]'', 'B[13]', 'B[12]', 'B[11]', 'B[10]', 'B[9]', 'B[8]', 'B[7]', 'B[6]', 'B[5]', 'B[4]', 'B[3]', 'B[2]', 'B[1]', 'B[0]'.
+Warning: In design 'crypt_unit', the same net is connected to more than one pin on submodule 'ADD1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'B[31]', 'B[30]'', 'B[29]', 'B[28]', 'B[27]', 'B[26]', 'B[25]', 'B[24]', 'B[23]', 'B[22]', 'B[21]', 'B[20]', 'B[19]', 'B[18]', 'B[17]', 'B[16]', 'B[15]', 'B[14]', 'B[13]', 'B[12]', 'B[11]', 'B[10]', 'B[9]', 'B[8]', 'B[7]', 'B[6]', 'B[5]', 'B[4]', 'B[3]', 'B[1]', 'B[0]'.
+1
+compile > ./compile.rep
+report_timing > ./timing_report/report_timing.txt
+report_area > ./area_report/report_area.txt
+report_area -hierarchy > ./area_report/report_area_hier.txt
+#ungroup -all -flatten
+change_names -hierarchy -rules verilog
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+Warning: In the design hazard_detection_unit, net 'N4' is connecting multiple ports. (UCN-1)
+Warning: In the design control_unit, net 'CU_OUT[15]' is connecting multiple ports. (UCN-1)
+Warning: In the design control_unit, net 'CU_OUT[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design CU, net 'sel' is connecting multiple ports. (UCN-1)
+1
+write_sdf ../netlist/riscV.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/isa09_2022_2023/Desktop/lab3_othman/RTL/crypt/netlist/riscV.sdf'. (WT-3)
+1
+write -f verilog -hierarchy -output ../netlist/riscV.v
+Writing verilog file '/home/isa09_2022_2023/Desktop/lab3_othman/RTL/crypt/netlist/riscV.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+write_sdc ../netlist/riscV.sdc
+1
+quit
+
+Memory usage for this session 215 Mbytes.
+Memory usage for this session including child processes 215 Mbytes.
+CPU usage for this session 68 seconds ( 0.02 hours ).
+Elapsed time for this session 74 seconds ( 0.02 hours ).
+
+Thank you...

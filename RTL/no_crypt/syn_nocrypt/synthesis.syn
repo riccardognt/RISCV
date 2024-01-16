@@ -1,0 +1,66 @@
+define_design_lib WORK -path ./work
+
+#crypt components
+
+
+analyze -library WORK -format vhdl {../RISCV/constants.vhd}
+analyze -library WORK -format vhdl {../RISCV/components_package.vhd}
+analyze -library WORK -format vhdl {../RISCV/INSTRUCTION_MEMORY/instuctions_rom.vhd}
+analyze -library WORK -format vhdl {../RISCV/PC.vhd}
+
+analyze -library WORK -format vhdl {../RISCV/extra_components/ADD.vhd}
+analyze -library WORK -format vhdl {../RISCV/extra_components/mux2_to_1.vhd}
+analyze -library WORK -format vhdl {../RISCV/extra_components/mux3_to_1.vhd}
+analyze -library WORK -format vhdl {../RISCV/extra_components/mux4_to_1.vhd}
+
+analyze -library WORK -format vhdl {../RISCV/DATA_MEMORY/data_mem.vhd}
+
+analyze -library WORK -format vhdl {../RISCV/ALU/ALU_CTRL.vhd}
+analyze -library WORK -format vhdl {../RISCV/ALU/ALU.vhd}
+
+analyze -library WORK -format vhdl {../RISCV/imm_gen.vhd}
+analyze -library WORK -format vhdl {../RISCV/REGISTER_FILE.vhd}
+analyze -library WORK -format vhdl {../RISCV/control_unit.vhd}
+
+
+analyze -library WORK -format vhdl {../RISCV/hazard_detection/comparator.vhd}
+analyze -library WORK -format vhdl {../RISCV/hazard_detection/forwarding_unit.vhd}
+analyze -library WORK -format vhdl {../RISCV/hazard_detection/hazard_detection_unit.vhd}
+
+analyze -library WORK -format vhdl {../RISCV/pipe_registers/ID_EX.vhd}
+analyze -library WORK -format vhdl {../RISCV/pipe_registers/IF_ID.vhd}
+analyze -library WORK -format vhdl {../RISCV/pipe_registers/EX_MEM.vhd}
+analyze -library WORK -format vhdl {../RISCV/pipe_registers/MEM_WB.vhd}
+
+analyze -library WORK -format vhdl {../RISCV/riscV_nocrypt.vhd}
+
+
+set power_preserve_rtl_hier_names true
+elaborate riscV_nocrypt -arch Behavior -lib WORK > ./elaborate.rep
+uniquify
+link
+
+
+create_clock -name MY_CLK -period 4.40 CK
+set_dont_touch_network MY_CLK
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] CK]
+#set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+
+
+#set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+#set_load $OLOAD [all_outputs]
+check_design
+compile > ./compile.rep
+
+report_timing > ./timing_report/report_timing.txt
+report_area > ./area_report/report_area.txt
+report_area -hierarchy > ./area_report/report_area_hier.txt
+
+#ungroup -all -flatten
+change_names -hierarchy -rules verilog
+
+#write_sdf ../netlist/riscV_nocrypt.sdf
+write -f verilog -hierarchy -output ../netlist/riscV_nocrypt.v
+#write_sdc ../netlist/riscV_nocrypt.sdc
+quit

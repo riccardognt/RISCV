@@ -2,6 +2,9 @@
 The main purpose of this lab was to design in VHDL a RISC-V-lite processor with 5 pipeline stages where the instructions supported by this processor are a subset of the whole RV32I which has a 32-bit fixed-width instruction set. 
 In particular, this subset is defined by the instructions required to execute the "minv" application given as specification.
 
+## Important notes
+This is a team project for the course of Integrated System Architecture held in the Electronic Engineering Master's degree program of Politecnico di Torino. The project was not originally developed making use of GitHub, it has been uploaded by myself subsequently. For a better understanding of the code, the design flow and the conclusions the reader can have a look to the RISCV.pdf report. Many thanks to my colleagues Othman and Roberto for their contribution to this project.
+
 ## The "minv-project" directory
 In "minv-project" folder there are files on the compilation and generation of the source code. In practice the application that must run on the developed RISC-V processor is made of 3 files: "main.c", "minv.h" and "minv.c". This code, given an array of numbers makes the absolute value of them and find the maximum among them.
 The process to obtain the wanted instructions is now described. The first step is to rely on a RISC-V version of gcc ("riscv32-unknown-elf-gcc") to generate the executable file from the main application; to do this, the compiler requires information about the memory organization and a preamble to initialize registers. The registers initialization is performed by the "crt0.s" file that defines the start symbol which represents the address of the first instruction to execute. The information about the memory organization is performed by the linked script: a file named "riscV32-isa.ld" which sets the first address at 0x00400000 for the instruction ROM memory, and 0x10010000 for the data RAM. It sets also the global pointer to 0x100008000, the stack pointer to 0x7fffeffc and assigns each segment of the program to the correct memory type.
@@ -16,5 +19,3 @@ Morover in this folder there are scripts for running automatically the Questasim
 The design has been also syntetized with Synopsys Design compiler and timing and area reports are available.
 In the RTL directory one can notice the presence of a "crypt" and a "no_crypt" folder. In particular, the last one contains the RTL design in VHDL of the basic structure as described until now while the first folder contains the same architecture but with the addition of a "decryption unit" that is necessary if we encrypt the instruction.
 For more details the reader can consult the pdf report.
-
-## 

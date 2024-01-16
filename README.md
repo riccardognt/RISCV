@@ -10,12 +10,11 @@ The final goal with the data and instructions obtained by compiling the applicat
 From these last two files, the final "program.asm file", which was used for the simulation in RARS, has been obtained by taking these two files and apply some minor editing.
 The program RARS simulates the execution of these instructions, updating the register file and data memory at every iteration, representing a reference for how the structures in the RISC-V architecture have to behave for every instruction.
 
-## "crypt" and "no_crypt"
-nella cartella minv-project sono presenti i file relativi alla compilazione e alla generazione del codice sorgente. 
-- Il file che contiene il codice assembly da eseguire nel simulatore è "program.asm".
-- Nella cartella crypt invece sono presenti i codici di encryption.
+## The "RTL" directory
+This directory contains all the VHDL files used to design the structure of the RISC-V processor. The architecture has been designed in order to run the instructions that are needed for the running of the "minv" application. Basically it is based on the typical RISC-V pipelined architecture with 5 pipeline stages (IF, ID, EX, MEM, WB) and then more features have been added such as units for managing the hazards: a forwarding unit block and an hazard detection unit for dealing with data hazards and a flush signal for managing the control hazards.
+Morover in this folder there are scripts for running automatically the Questasim simulation for comparing the results with the ones obtained through the RARS simulator.
+The design has been also syntetized with Synopsys Design compiler and timing and area reports are available.
+In the RTL directory one can notice the presence of a "crypt" and a "no_crypt" folder. In particular, the last one contains the RTL design in VHDL of the basic structure as described until now while the first folder contains the same architecture but with the addition of a "decryption unit" that is necessary if we encrypt the instruction.
+For more details the reader can consult the pdf report.
 
-nella cartella RTL sono presenti:
-		--- la cartella crypt che contiene la versione del RISCV con l'estensione dell'encryption.
-		--- la cartella no_crypt contiene la versione del RISCV senza l'encryption
-
+## 
